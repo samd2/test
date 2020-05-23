@@ -15,6 +15,7 @@
 // Boost.Test
 #include <boost/test/data/config.hpp>
 #include <boost/test/data/size.hpp>
+#include <boost/test/utils/boost_helpers.hpp>
 
 #include <boost/test/utils/is_forward_iterable.hpp>
 
@@ -69,7 +70,7 @@ class delayed_dataset;
 
 //! Helper metafunction indicating if the specified type is a dataset.
 template<typename DataSet>
-struct is_dataset : mpl::false_ {};
+struct is_dataset : bt_false_type {};
 
 //____________________________________________________________________________//
 
