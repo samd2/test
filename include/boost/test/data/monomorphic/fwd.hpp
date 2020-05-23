@@ -23,7 +23,6 @@
 #include <boost/type_traits/remove_const.hpp>
 #include <boost/type_traits/remove_reference.hpp>
 #include <boost/type_traits/is_array.hpp>
-#include <boost/mpl/bool.hpp>
 
 // STL
 #include <tuple>
