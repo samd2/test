@@ -13,6 +13,7 @@
 
 // Boost.Test
 #include <boost/test/detail/config.hpp>
+#include <boost/test/utils/boost_helpers.hpp>
 
 // STL
 #include <iosfwd>
@@ -76,7 +77,7 @@ public:
     {
     }
 
-    std::ostream&   operator()( std::ostream& ostr ) const BOOST_OVERRIDE
+    std::ostream&   operator()( std::ostream& ostr ) const BOOST_TEST_OVERRIDE
     {
         return m_prev(ostr) << m_value;
     }
