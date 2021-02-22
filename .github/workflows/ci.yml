@@ -368,6 +368,7 @@ jobs:
           ls -al /usr/bin/c*
           echo "about to run sudo apt-get purge -y $PACKAGES_TO_REMOVE"
           if [ -n "$PACKAGES_TO_REMOVE" ]; then sudo apt-get purge -y $PACKAGES_TO_REMOVE; fi
+          sudo ln -s /usr/bin/llvm-cov-9 /usr/bin/llvm-cov
           echo "about to run the equivalent of linux-cxx-install.sh"
 
           set -ex
